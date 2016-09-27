@@ -1,5 +1,7 @@
 import json
 
+data = json.loads(open("bars.json", 'r', encoding='utf-8').read())
+print(data[1:2])
 
 def load_data(filepath):
     pass
@@ -19,3 +21,4 @@ def get_closest_bar(data, longitude, latitude):
 
 if __name__ == '__main__':
     pass
+
